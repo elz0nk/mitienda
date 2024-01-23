@@ -1,0 +1,340 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Estilo de la barra de navegación superior */
+.navbar {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    justify-content: flex-end; /* Alinea los elementos al final del contenedor */
+    background-color: #333333;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Estilo del menú principal */
+.menu {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente al centro del contenedor */
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Aplica una sombra al contenedor */
+}
+
+.menu img {
+    margin-right: 20px; /* Añade un margen a la derecha del logo */
+    height: 5em;
+}
+
+.menu a {
+    color: #333333;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Estilo de la barra de envíos */
+.envios {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    justify-content: space-around; /* Distribuye los elementos de forma equitativa en el contenedor */
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.envios a {
+    color: #333333;
+    text-decoration: none;
+}
+
+/* Estilo del banner principal */
+.horademoverse {
+    background-image: url("img/banner.jpg"); /* Usa una imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
+    height: 500px; /* Establece la altura del contenedor */
+    position: relative; /* Establece la posición relativa para poder posicionar el texto de forma absoluta */
+}
+
+.textomoverse {
+    position: absolute; /* Establece la posición absoluta respecto al contenedor padre */
+    top: 50%; /* Posiciona el texto a la mitad del contenedor */
+    left: 50%; /* Posiciona el texto a la mitad del contenedor */
+    transform: translate(-50%, -50%); /* Centra el texto usando una transformación */
+    color: white;
+    text-align: center;
+}
+
+.textomoverse h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.textomoverse p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.textomoverse a {
+    display: inline-block;
+    background-color: #333333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilo de la sección de deportes */
+.futbalrun {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+}
+
+.futbalrun article {
+    width: 33.33%; /* Establece el ancho de cada artículo a un tercio del contenedor */
+    position: relative; /* Establece la posición relativa para poder posicionar el texto de forma absoluta */
+}
+
+.futbalrun article img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Establece la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+}
+
+.futbalrun article h2 {
+    position: absolute; /* Establece la posición absoluta respecto al contenedor padre */
+    bottom: 0; /* Posiciona el texto al final del contenedor */
+    left: 0; /* Posiciona el texto al inicio del contenedor */
+    width: 100%; /* Establece el ancho del texto al 100% del contenedor */
+    background-color: rgba(0,0,0,0.5); /* Usa un color semi-transparente para el fondo */
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.futbalrun article a {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    padding: 10px;
+}
+
+/* Estilo de la sección de novedades */
+section:nth-of-type(2) {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Aplica una sombra al contenedor */
+}
+
+section:nth-of-type(2) img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(2) h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(2) a {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    background-color: #333333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+/* Estilo de la sección de productos */
+section:nth-of-type(3) {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten al tamaño del contenedor */
+}
+
+section:nth-of-type(3) div {
+    width: 33.33%; /* Establece el ancho de cada div a un tercio del contenedor */
+    padding: 10px;
+}
+
+section:nth-of-type(3) div a {
+    display: block;
+}
+
+section:nth-of-type(3) div a img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+}
+
+/* Estilo de la sección de favoritos */
+section:nth-of-type(4) {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Aplica una sombra al contenedor */
+}
+
+section:nth-of-type(4) h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(4) article {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente al centro del contenedor */
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(4) article img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+    margin-right: 20px;
+}
+
+section:nth-of-type(4) article h3 {
+    margin: 0;
+}
+
+section:nth-of-type(4) article a {
+    display: inline-block;
+    background-color: #333333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+/* Estilo de la sección de inspiración */
+section:nth-of-type(5) {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten al tamaño del contenedor */
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Aplica una sombra al contenedor */
+}
+
+section:nth-of-type(5) h2 {
+    text-align: center;
+    width: 100%; /* Establece el ancho del título al 100% del contenedor */
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(5) article {
+    width: 33.33%; /* Establece el ancho de cada artículo a un tercio del contenedor */
+    position: relative; /* Establece la posición relativa para poder posicionar el texto de forma absoluta */
+}
+
+section:nth-of-type(5) article img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 300px; /* Establece la altura de la imagen a 300px */
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+}
+
+section:nth-of-type(5) article h3 {
+    position: absolute; /* Establece la posición absoluta respecto al contenedor padre */
+    bottom: 0; /* Posiciona el texto al final del contenedor */
+    left: 0; /* Posiciona el texto al inicio del contenedor */
+    width: 100%; /* Establece el ancho del texto al 100% del contenedor */
+    background-color: rgba(0,0,0,0.5); /* Usa un color semi-transparente para el fondo */
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+section:nth-of-type(5) article p {
+    position: absolute; /* Establece la posición absoluta respecto al contenedor padre */
+    top: 0; /* Posiciona el texto al inicio del contenedor */
+    left: 0; /* Posiciona el texto al inicio del contenedor */
+    width: 100%; /* Establece el ancho del texto al 100% del contenedor */
+    background-color: rgba(0,0,0,0.5); /* Usa un color semi-transparente para el fondo */
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+section:nth-of-type(5) article a {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+/* Estilo de la sección de categorías */
+section:nth-of-type(6) {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten al tamaño del contenedor */
+    padding: 10px;
+}
+
+section:nth-of-type(6) article {
+    width: 33.33%; /* Establece el ancho de cada artículo a un tercio del contenedor */
+    position: relative; /* Establece la posición relativa para poder posicionar el texto de forma absoluta */
+}
+
+section:nth-of-type(6) article a {
+    display: block;
+}
+
+section:nth-of-type(6) article a img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 300px; /* Establece la altura de la imagen a 300px */
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+}
+
+section:nth-of-type(6) article h2 {
+    position: absolute; /* Establece la posición absoluta respecto al contenedor padre */
+    bottom: 0; /* Posiciona el texto al final del contenedor */
+    left: 0; /* Posiciona el texto al inicio del contenedor */
+    width: 100%; /* Establece el ancho del texto al 100% del contenedor */
+    background-color: rgba(0,0,0,0.5); /* Usa un color semi-transparente para el fondo */
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Estilo del pie de página */
+footer {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    justify-content: space-between; /* Distribuye los elementos de forma equitativa en el contenedor */
+    background-color: #333333;
+    padding: 20px;
+    color: white;
+}
+
+footer div {
+    width: 33.33%; /* Establece el ancho de cada div a un tercio del contenedor */
+}
+
+footer div a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer div h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+footer div p {
+    margin: 0;
+}
+
+footer div iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}

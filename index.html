@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+html{
+    background-color: #333333;
+    margin: 0px;
+}
+/* Estilo general del cuerpo de la página */
+body {
+    font-family:monospace;
+    background-color: #f0f0f0;
+}
+
+/* Estilo de la barra de navegación superior */
+.navbar {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    justify-content: flex-end; /* Alinea los elementos al final del contenedor */
+    background-color: #333333;
+    padding: 1rem;
+    position:relative;
+}
+.navtienda{
+padding-right: 100px;
+}
+
+.navnombre{
+    padding-right:20rem;
+    font-family: "Basic Commercial,sans-serif";
+    font-size:xx-large;
+    font-weight:bolder;
+    
+}
+
+.navbar a {
+    color:#f3f0f0;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Estilo del menú principal */
+.menu {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente al centro del contenedor */
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Aplica una sombra al contenedor */
+}
+
+.menu img {
+    margin-right: 20px; /* Añade un margen a la derecha del logo */
+    height: 5rem;
+}
+
+.menu a {
+    color: #517eaf;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Estilo de la barra de envíos */
+.envios {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    justify-content: space-around; /* Distribuye los elementos de forma equitativa en el contenedor */
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.envios a {
+    color: #517eaf;
+    text-decoration: none;
+}
+
+/* Estilo del banner principal */
+.horademoverse {
+    background-image:url(img/nubes.jpg); /* Usa una imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
+    height: 55em; /* Establece la altura del contenedor */
+    position: relative; /* Establece la posición relativa para poder posicionar el texto de forma absoluta */
+}
+
+.textomoverse {
+    position: absolute; /* Establece la posición absoluta respecto al contenedor padre */
+    top: 50%; /* Posiciona el texto a la mitad del contenedor */
+    left: 50%; /* Posiciona el texto a la mitad del contenedor */
+    transform: translate(-50%, -50%); /* Centra el texto usando una transformación */
+    color: white;
+    text-align: center;
+    /*background-image: url(img/logo1.jpeg);*/
+}
+
+.textomoverse h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    background-color: rgba(95, 140, 222, 0.523);
+
+}
+
+.textomoverse p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: rgba(95, 140, 222, 0.523);
+}
+
+.textomoverse a {
+    display: inline-block;
+    background-color: #517eaf;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilo de la sección de deportes */
+.futbalrun {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+}
+
+.futbalrun article {
+    width: 33.33%; /* Establece el ancho de cada artículo a un tercio del contenedor */
+    position: relative; /* Establece la posición relativa para poder posicionar el texto de forma absoluta */
+}
+
+.futbalrun article img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Establece la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+}
+
+.futbalrun article h2 {
+    position: absolute; /* Establece la posición absoluta respecto al contenedor padre */
+    bottom: 0; /* Posiciona el texto al final del contenedor */
+    right:20px;
+    left: 0; /* Posiciona el texto al inicio del contenedor */
+    width: 100%; /* Establece el ancho del texto al 100% del contenedor */
+    background-color: rgba(0,0,0,0.5); /* Usa un color semi-transparente para el fondo */
+    color: white;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.futbalrun article a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Estilo de la sección de productos */
+.marcas {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    margin-top: 20px;
+}
+
+.marcas div {
+    width: 33.33%; /* Establece el ancho de cada div a un tercio del contenedor */
+    padding: 10px;
+}
+
+.marcas div a {
+    display: block;
+}
+
+.marcas div a img {
+    width: 100%;
+    height: 150px;
+ /* Ajusta la imagen al tamaño del contenedor */
+}
+
+/* Estilo del pie de página */
+footer {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    justify-content: space-between; /* Distribuye los elementos de forma equitativa en el contenedor */
+    background-color: #333333;
+    padding: 20px;
+    color: white;
+}
+
+footer div {
+    width: 33.33%; /* Establece el ancho de cada div a un tercio del contenedor */
+}
+
+footer div a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer div h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+footer div p {
+    margin: 0;
+}
+
+footer div iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--Encabezado-->
+        <div class="navbar">
+            <div class="navnombre">
+                <a href="tienda.html">Rolling Stars</a>
+            </div>
+            <div class="navtienda">
+                <a href="login.php">Iniciar sesión</a>
+            </div>    
+            <div class="navcomprar">
+                <a href="register.php">Registrarse</a>
+            </div>
+            
+
+        </div>
+        <div class="menu">
+            <img src="img/logo1.jpeg" height="70%" alt="Logo">
+            <a href="quienes-somos.html">Quienes somos</a>
+        </div>
+        <div class="envios">
+            <a>Envío Gratis a partir de 50€</a>
+            <a href="register.php">Envío Gratuito para Miembros</a>
+            <a>Envíos entre 3 y 5 días</a>
+        </div>
+        <div class="horademoverse" >
+                <div class="textomoverse">
+                    <h1 id="titulomov">Roll even higher</h1>
+                    <p id="textomov">Es hora de llevar el skate sobre las nubes Registrate hoy y obtén envío gratuito</p>
+                    <a href="tienda.html">COMPRAR AHORA</a>
+                </div>
+        </div>
+    </header>
+    <main>
+        <!--Contenido principal-->
+        <section class="futbalrun">
+            <article class="china">
+                <a href="china.html"><img src="img/sk1.jpeg"
+                    height="800px" width="800px" alt="china"></a>
+                <h2>COLECCIÓN CHINA</h2>
+            </article>
+            <article>
+                <a href="minimalista.html"><img src="img/min1.jpeg"
+                height="800px" width="800px" alt="minimalista"></a>
+                <h2>COLECCIÓN MINIMALISTA</h2>
+            </article>
+            <article>
+                <a href="propulsado.html"><img src="img/prop1.jpeg"
+                    height="800px" width="800px" alt="propulsado"></a>
+                <h2>COLECCIÓN PROPULSADO</h2>
+            </article>
+        </section>
+        <section class="marcas">
+            <div>
+                <a><img src="img/logo2.png" alt="logo"></a>
+            </div>
+            <div>
+                <a><img src="img/logo3.jpg" alt="logo"></a>
+            </div>
+            <div>
+                <a><img src="img/logo4.webp" alt="logo"></a>
+            </div>
+            <div>
+                <a href="volcom.html"><img src="img/logo5.png" alt="logo"></a>
+            </div>
+            <div>
+                <a><img src="img/logo6.webp" alt="logo"></a>
+            </div>
+            <div>
+                <a><img src="img/logo7.png" alt="logo"></a>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div>
+            <a href="privacidad.html">Política de Privacidad</a>
+            <a href="cookies.html">Cookies</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <div>
+            <h4>Contácta con nosotros</h4>
+            <p>rollingstars@gmail.com</p>
+            <p>Calle Consuegra, 3</p>
+            <p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.020564965267!2d-3.6791206253788338!3d40.47481005210453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229475fc7e749%3A0x71a6fb4707b13a23!2sC.%20Consuegra%2C%203%2C%2028036%20Madrid!5e0!3m2!1ses!2ses!4v1695728533983!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

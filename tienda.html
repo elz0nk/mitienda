@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos de la sección arriba */
+.arriba {
+    background-color: #f0f0f0;
+    padding: 50px;
+    text-align: center;
+}
+
+.arriba a {
+    color: #333;
+    text-decoration: none;
+    text-align: left;
+}
+
+.arriba h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: underline;
+
+}
+
+article.dos{
+    padding-bottom: 0px;
+}
+article.tres{
+    padding-bottom: 0px;
+
+}
+
+/* Estilos de la sección articulos */
+.articulos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    padding: 40px;
+}
+
+/* Estilos de cada sección dentro de articulos */
+.one, .two, .three, .four {
+    display: grid;
+    grid-template-rows: 2fr 0fr 0fr;
+    grid-gap: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos de cada artículo dentro de cada sección */
+.uno img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dos h3 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.tres a {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <section class="arriba">
+        <a href="index.html">Volver</a>
+        <h2>NUESTRAS COLECCIONES</h2>
+    </section>
+    <div class="articulos">
+        <section class="one">
+            <article class="uno">
+                <img src="img/sk1.jpeg" alt="">
+            </article>
+            <article class="dos">
+                <h3>COLECCIÓN CHINA</h3>
+            </article>
+            <article class="tres">
+              <a href="china.html">COMPRAR AHORA</a>
+            </article>         
+        </section>
+        <section class="two">
+            <article class="uno">
+                <img src="img/min1.jpeg" alt="">
+            </article>
+            <article class="dos">
+                <h3>COLECCIÓN MINIMALISTA</h3>
+            </article>
+            <article class="tres">
+                <a href="minimalista.html">COMPRAR AHORA</a>
+            </article>         
+        </section>
+        <section class="three">
+            <article class="uno">
+                <img src="img/prop1.jpeg" alt="">
+            </article>
+            <article class="dos">
+                <h3>COLECCIÓN PROPULSADO</h3>
+            </article>
+            <article class="tres">
+                <a href="propulsado.html">COMPRAR AHORA</a>
+            </article>         
+        </section>
+        <section class="four">
+            <article class="uno">
+                <img src="img/her1.webp" alt="">
+            </article>
+            <article class="dos">
+                <h3>HERRAMIENTAS</h3>
+            </article>
+            <article class="tres">
+                <a href="herramientas.html">COMPRAR AHORA</a>
+            </article>         
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
